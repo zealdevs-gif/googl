@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Pay Channel</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #111111;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      color: #ffffff;
+    }
+
+    .channel-card {
+      width: 100%;
+      max-width: 460px;
+      min-height: 438px;
+      background: #202020;
+      border-radius: 3px;
+      text-align: center;
+      padding: 40px 18px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-image {
+      width: 152px;
+      height: 152px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 22px;
+    }
+
+    .channel-title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .subscribers {
+      color: #9299a3;
+      font-size: 18px;
+      margin-bottom: 17px;
+    }
+
+    .description {
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 400;
+      margin-bottom: 32px;
+      max-width: 100%;
+    }
+
+    .join-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 184px;
+      min-height: 52px;
+      padding: 14px 20px;
+      background: #229ee6;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 700;
+      transition: background 0.2s ease;
+    }
+
+    .join-button:hover {
+      background: #168bd0;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 480px) {
+      .channel-card {
+        max-width: 100%;
+        min-height: 438px;
+        padding: 40px 14px 30px;
+      }
+
+      .profile-image {
+        width: 145px;
+        height: 145px;
+        margin-bottom: 22px;
+      }
+
+      .channel-title {
+        font-size: 30px;
+      }
+
+      .subscribers {
+        font-size: 18px;
+      }
+
+      .description {
+        font-size: 18px;
+        margin-bottom: 32px;
+      }
+
+      .join-button {
+        width: 184px;
+        min-height: 52px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .channel-title {
+        font-size: 27px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .profile-image {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="channel-card">
+
+    <!-- Apni profile image ka path yahan dalein -->
+    <img
+      src="logo.jpg"
+      alt="Google Pay Channel"
+      class="profile-image"
+    >
+
+    <h1 class="channel-title">Google Pay</h1>
+
+    <p class="subscribers">351 subscribers</p>
+
+    <p class="description">
+      Google pay 1 cr limit available same day
+    </p>
+
+    <!-- Apna actual Telegram channel link dalein -->
+    <a
+      href="https://t.me/+KJSYrzxAG5I3ZTU9"
+      class="join-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      JOIN CHANNEL
+    </a>
+
+  </div>
+
+</body>
+</html>
